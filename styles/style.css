@@ -118,17 +118,27 @@ ol {
   min-block-size: 27px;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid currentColor;
+}
+
 .search-form__pseudo-checkbox {
   border: 1px solid currentColor;
   text-align: center;
   cursor: pointer;
   inline-size: 19px;
   block-size: 19px;
+  display: flex;
+  justify-content: center;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
-  display: inline-block;
+  display: block;
   align-self: center;
   width: 15px;
   height: 15px;
@@ -144,7 +154,7 @@ ol {
 .content__list {
   position: relative;
   padding-right: 7px;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 298px;
 }
 
