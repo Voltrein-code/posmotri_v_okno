@@ -280,6 +280,7 @@ ol {
   background-color: transparent;
   cursor: pointer;
   inline-size: 100%;
+  font-weight: 700;
   min-block-size: 34px;
 }
 
